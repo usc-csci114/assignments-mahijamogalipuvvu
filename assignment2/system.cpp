@@ -5,17 +5,21 @@ using namespace std;
 
 System::System(size_t n, size_t m, std::vector< std::vector<double> > matrix) 
 {
-	//what does the constructor need to do?	
+	m_n = n;
+	m_m = m;
+	m_matrix = matrix;
+
+	m_numsol = -1;
 }
 
-int getNumSolutions() //0 = zero solutions, 1 = one solution, 2 = infinite
+int System::getNumSolutions() //0 = zero solutions, 1 = one solution, 2 = infinite
 {
-	//this is a getter	
+	return m_numsol;
 }
 
 std::vector<double> System::getSolution() //if 1 or 2 above, get a solution
 {
-	//another getter
+	return m_sol;
 }
 
 //adapted from 
@@ -58,11 +62,11 @@ void System::solve()
 		for (int j=0; j<m; ++j)
 			sum += m_sol[j] * m_matrix[i][j];
 		if (abs (sum - m_matrix[i][m]) > EPS)
-			m_numsol = 0;
+			{m_numsol = 0;return;}
 	}
 
 	for (int i=0; i<m; ++i)
-		if (where[i] == -1)
-			m_numsol = INF;
+		if (where[i] == -1) 
+			{m_numsol = INF;return;}
 	m_numsol = 1;
 }
