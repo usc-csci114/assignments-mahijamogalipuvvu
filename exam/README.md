@@ -6,7 +6,7 @@ https://www.kaggle.com/datasets/mexwell/bug-attraction
 
 Feel free to spend a few minutes looking at the Kaggle page, there are some helpful descriptions of the data and how it was collected.
 
-The data was collected in an effort to understand how different lights attracted different insects. Each row gives the types (biological order) and numbers of bugs collected in a single trap. The traps were fitted with a particular type of light. Various other pieces of data were recorded as well, including the phase of the moon.
+The data was collected in an effort to understand how different lights attracted different insects. Each row gives the types (biological order) and numbers of bugs collected in a single trap. The traps were fitted with a particular type of light, there were 5 different light types. Various other pieces of data were recorded as well, including the phase of the moon.
 
 Your task will be to create 3 different outputs, two graphs and one table from the data. Read through the full description so that you can think about the different variables and data structures you will need in your program.
 
@@ -18,7 +18,7 @@ Print out this table to the terminal formatted as nicely as possible.
 
 #### Task 2: Scatter Plot
 
-For this task we are interested in creating a scatter plot using the moon phase. Choose appropriate variables and data structures to create a scatter plot of the total number of bugs for each row vs. the "Standardized Moon" for that row. 
+For this task we are interested in creating a scatter plot using the moon phase. You will make two plots: one for the urban "BG" site and one for the "LK" and "Stunt" sites. Choose appropriate variables and data structures to create a scatter plot of the total number of bugs for each row vs. the "Standardized Moon" for that row. 
 
 Also on the same plot, draw the linear regression line for this data and add the line equation and R^2 value for the linear regression.
 
