@@ -12,7 +12,7 @@ Your task will be to create 3 different outputs, two graphs and one table from t
 
 #### Task 1: Data table
 
-For this task make a table that shows for each species which light type is the most attractive. To make this calculation straightforward you do not need to consider any other factor besides ranking for each order the total number per light type.
+For this task make a table that shows for each order which light type is the most attractive. To make this calculation straightforward you do not need to consider any other factor besides ranking for each order the total number per light type.
 
 Print out this table to the terminal formatted as nicely as possible.
 
