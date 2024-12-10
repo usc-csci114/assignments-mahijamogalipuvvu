@@ -66,7 +66,7 @@ void System::solve()
 	}
 
 	for (int i=0; i<m; ++i)
-		if (where[i] == -1) 
+		if (where[i] == -1)
 			{m_numsol = INF;return;}
 	m_numsol = 1;
 }
